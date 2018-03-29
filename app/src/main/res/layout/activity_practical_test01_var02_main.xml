@@ -1,98 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="practicaltest01var02.eim.systems.cs.pub.ro.practicaltest01var02.PracticalTest01Var02MainActivity">
 
     <Button
         android:id="@+id/navigate_to_secondary_activity_button"
         android:layout_width="wrap_content"
-        android:layout_marginTop="350dp"
-        android:layout_marginLeft="50dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
         android:text="navigate to secondary activity" />
 
     <EditText
         android:id="@+id/left_edit_text"
-        android:layout_width="155dp"
-        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@id/navigate_to_secondary_activity_button"
-        android:ems="7"
-        android:gravity="center"
         android:inputType="number"
         android:saveEnabled="false" />
 
     <EditText
         android:id="@+id/right_edit_text"
-        android:layout_width="wrap_content"
-        android:layout_marginTop="260dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:saveEnabled="false"
-
-        android:inputType="number"
-        android:ems="7"
-        android:layout_alignParentRight="true"
-        android:layout_below="@id/navigate_to_secondary_activity_button"
-        android:gravity="center" />
+        android:inputType="number"/>
 
     <TextView
         android:id="@+id/left_nonedit_text"
-        android:layout_width="155dp"
-        android:layout_marginTop="300dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@id/navigate_to_secondary_activity_button"
-        android:ems="7"
-        android:enabled="false"
-        android:gravity="center"
-        android:inputType="number"
-        android:saveEnabled="false"
-        android:clickable="false"
-        android:cursorVisible="false"
-        android:focusable="false"
-        android:focusableInTouchMode="false"/>
+        android:saveEnabled="false" />
 
     <Button
         android:id="@+id/left_button"
         android:layout_width="wrap_content"
-        android:layout_marginTop="200dp"
-        android:layout_marginLeft="110dp"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/left_edit_text"
-        android:layout_below="@id/left_edit_text"
-        android:layout_alignRight="@id/left_edit_text"
         android:text="+" />
 
     <Button
         android:id="@+id/right_button"
         android:layout_width="wrap_content"
-        android:layout_marginTop="200dp"
-        android:layout_marginLeft="200dp"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/right_edit_text"
-        android:layout_alignRight="@id/right_edit_text"
-        android:layout_below="@id/right_edit_text"
         android:text="-" />
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
-
-    </android.support.design.widget.AppBarLayout>
-
-
-</android.support.design.widget.CoordinatorLayout>
+</LinearLayout>
